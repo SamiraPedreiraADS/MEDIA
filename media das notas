@@ -1,0 +1,28 @@
+ #include <stdio.h>
+
+int main(void) {
+ float nota, nota2;
+ int media;
+ char exame, aprovado, reprovado;
+
+ printf("BOLETIM ESCOLAR 2023\n\n");
+
+ printf("Informe a nota do primeiro semestre: ");
+ scanf("%f", &nota);
+
+ printf("\nInforme a nota do segundo semestre: ");
+ scanf("%f", &nota2);
+
+ media = (nota + nota2) / 2;
+
+ if (media < 6 && media == 3){
+   printf ("\nVocê está de exame");
+ }
+
+ if (media > 6) {
+   printf ("\nVocê passou!!");
+ }
+ if (media < 3) {
+   printf ("\nVocê está reprovado");
+ }
+}
